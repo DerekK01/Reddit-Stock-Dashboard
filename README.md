@@ -47,7 +47,7 @@ Derek Kwan
 
 ## License
 
-This project is licensed under the CCA 4.0 Int. License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
