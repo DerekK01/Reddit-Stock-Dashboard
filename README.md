@@ -34,6 +34,39 @@ npm start
 ```
 * Run  Dash Webpage/app.py 
 
+### MongoDB API Usage
+
+Connection: ```http://localhost:3000/```
+
+Access post database: ```http://localhost:3000/posts/```
+
+Access comment database: ```http://localhost:3000/comments/```
+
+Post  database query: ```http://localhost:3000/posts/query?```
+
+Usable filter:
+* Start: Start date in Epoch utc (exclusive)
+* End: End date in Epoch utc (exclusive)
+* Title: Post Title keyword search
+* Text: Post content search 
+
+Eg. To search for a end time 1639250000 to start time 1639239486 with a title keyword “Short” and a text keyword “SE” will be
+```http://localhost:3000/posts/query?end=1639250000&title=Short&text=SE&start=1639239486```
+
+
+Comment database query: ```http://localhost:3000/comments/query?```
+
+Usable filter:
+* Start: Start date in Epoch utc (exclusive)
+* End: End date in Epoch utc (exclusive)
+* Text: Comment content search 
+
+Eg. To search for a end time 1639320343 to start time 1639320350 with a keyword “Put”
+```http://localhost:3000/comments/query?end=1639320350&text=Put &start=1639320343```
+
+
+
+
 
 ## Authors
 
